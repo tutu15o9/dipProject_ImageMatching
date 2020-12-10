@@ -52,10 +52,10 @@ def knn_clasif(good_matches):
 
 
 template_name = "./images/nemo_template.jpg"
+query_name = "./images/nemo.jpg"
+
 template_img = cv.imread(template_name, cv.IMREAD_GRAYSCALE)
 template_kp, template_des = calculate_SIFT(template_img)
-
-query_name = "./images/nemo.jpg"
 query_img = cv.imread(query_name, cv.IMREAD_GRAYSCALE)
 query_kp, query_des = calculate_SIFT(query_img)
 
